@@ -56,14 +56,14 @@ class UserInputFields extends StatelessWidget {
                     context: context,
                     builder: (BuildContext context) {
                       return AlertDialog(
-                        title: Text('Invalid Input'),
-                        content: Text('Please enter a valid name and age.'),
+                        title: const Text('Invalid Input'),
+                        content: const Text('Please enter a valid name and age.'),
                         actions: [
                           TextButton(
                             onPressed: () {
                               Navigator.of(context).pop();
                             },
-                            child: Text('OK'),
+                            child: const Text('OK'),
                           ),
                         ],
                       );
